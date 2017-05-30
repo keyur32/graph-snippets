@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "create_item_attachment_from_post"
+}

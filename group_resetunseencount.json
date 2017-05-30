@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "group_resetunseencount"
+}

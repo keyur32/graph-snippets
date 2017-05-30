@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "create_mailfolder_from_mailfolder"
+}

@@ -1,0 +1,14 @@
+{
+  "method": "PATCH",
+  "url": "https://graph.microsoft.com/v1.0/me",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "update_user"
+}

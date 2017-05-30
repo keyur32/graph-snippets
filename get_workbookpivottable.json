@@ -1,0 +1,5 @@
+{
+  "method": "GET",
+  "url": "https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables/{id}",
+  "comment": "get_workbookpivottable"
+}

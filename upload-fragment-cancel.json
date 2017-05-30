@@ -1,0 +1,14 @@
+{
+  "method": "DELETE",
+  "url": "https://tenant-my.sharepoint.com/alkjl1kjklna",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "upload-fragment-cancel"
+}

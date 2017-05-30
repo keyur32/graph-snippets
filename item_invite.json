@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://graph.microsoft.com/v1.0/drive/items/{item-id}/invite",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "item_invite"
+}

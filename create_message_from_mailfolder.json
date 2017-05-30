@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "create_message_from_mailfolder"
+}

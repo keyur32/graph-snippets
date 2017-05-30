@@ -1,0 +1,14 @@
+{
+  "method": "PATCH",
+  "url": "https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "update_photo"
+}

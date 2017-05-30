@@ -1,0 +1,5 @@
+{
+  "method": "GET",
+  "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders",
+  "comment": "get_borders"
+}

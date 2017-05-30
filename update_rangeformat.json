@@ -1,0 +1,14 @@
+{
+  "method": "PATCH",
+  "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "update_rangeformat"
+}

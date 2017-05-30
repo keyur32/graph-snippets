@@ -1,0 +1,5 @@
+{
+  "method": "GET",
+  "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort",
+  "comment": "get_tablesort"
+}

@@ -1,0 +1,5 @@
+{
+  "method": "GET",
+  "url": "https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}",
+  "comment": "get_shares_by_url"
+}

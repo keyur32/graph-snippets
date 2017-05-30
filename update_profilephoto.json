@@ -1,0 +1,14 @@
+{
+  "method": "PUT",
+  "url": "https://graph.microsoft.com/v1.0/me/photo/$value",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "update_profilephoto"
+}

@@ -1,0 +1,14 @@
+{
+  "method": "PATCH",
+  "url": "/me/drive/items/{item-id}",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "update_item"
+}

@@ -1,0 +1,14 @@
+{
+  "method": "DELETE",
+  "url": "https://graph.microsoft.com/v1.0/directoryObject/{id}",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "delete_directoryobject"
+}

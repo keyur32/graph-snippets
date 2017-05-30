@@ -1,0 +1,5 @@
+{
+  "method": "GET",
+  "url": "https://graph.microsoft.com/v1.0/me/mailFolders",
+  "comment": "get_mailfolders"
+}

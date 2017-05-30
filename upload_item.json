@@ -1,0 +1,14 @@
+{
+  "method": "PUT",
+  "url": "/me/drive/root:/{item-path}:/content",
+  "headers": [
+    {
+      "name": "Content-type",
+      "value": "application/json"
+    }
+  ],
+  "postData": {
+    "text": "{ }"
+  },
+  "comment": "upload_item"
+}

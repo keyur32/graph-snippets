@@ -1,0 +1,5 @@
+{
+  "method": "GET",
+  "url": "https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders",
+  "comment": "get_acceptedsenders"
+}
