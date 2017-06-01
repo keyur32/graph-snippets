@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/subscriptions",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n   \"changeType\": \"created,updated\",\r\n   \"notificationUrl\": \"https://webhook.azurewebsites.net/api/send/myNotifyClient\",\r\n   \"resource\": \"me/mailFolders('Inbox')/messages\",\r\n   \"expirationDateTime\":\"2016-11-20T18:23:45.9356913Z\",\r\n   \"clientState\": \"subscription-identifier\"\r\n}\n"
   },
   "comment": "create_subscription_from_subscriptions"
 }

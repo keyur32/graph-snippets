@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/reply",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"post\": {\r\n    \"body\": {\r\n      \"contentType\": \"\",\r\n      \"content\": \"content-value\"\r\n    },\r\n    \"receivedDateTime\": \"datetime-value\",\r\n    \"hasAttachments\": true,\r\n    \"from\": {\r\n      \"emailAddress\": {\r\n        \"name\": \"name-value\",\r\n        \"address\": \"address-value\"\r\n      }\r\n    },\r\n    \"sender\": {\r\n      \"emailAddress\": {\r\n        \"name\": \"name-value\",\r\n        \"address\": \"address-value\"\r\n      }\r\n    },\r\n    \"conversationThreadId\": \"conversationThreadId-value\",\r\n    \"newParticipants\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"name\": \"name-value\",\r\n          \"address\": \"address-value\"\r\n        }\r\n      }\r\n    ],\r\n    \"conversationId\": \"conversationId-value\",\r\n    \"createdDateTime\": \"datetime-value\",\r\n    \"lastModifiedDateTime\": \"datetime-value\",\r\n    \"changeKey\": \"changeKey-value\",\r\n    \"categories\": [\r\n      \"categories-value\"\r\n    ],\r\n    \"id\": \"id-value\",\r\n    \"inReplyTo\": {\r\n    },\r\n    \"attachments\": [\r\n      {\r\n        \"lastModifiedDateTime\": \"datetime-value\",\r\n        \"name\": \"name-value\",\r\n        \"contentType\": \"contentType-value\",\r\n        \"size\": 99,\r\n        \"isInline\": true,\r\n        \"id\": \"id-value\"\r\n      }\r\n    ]\r\n  }\r\n}\n"
   },
   "comment": "post_reply"
 }

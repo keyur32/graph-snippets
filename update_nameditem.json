@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"name\": \"name-value\",\r\n  \"type\": \"type-value\",\r\n  \"value\": {\r\n  },\r\n  \"visible\": true\r\n}\n"
   },
   "comment": "update_nameditem"
 }

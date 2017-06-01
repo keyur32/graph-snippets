@@ -1,5 +1,11 @@
 {
   "method": "GET",
   "url": "https://graph.microsoft.com/v1.0/me/reminderView?startDateTime=startDateTime-value&endDateTime=endDateTime-value",
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    }
+  ],
   "comment": "user_reminderview"
 }

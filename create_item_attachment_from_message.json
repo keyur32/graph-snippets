@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"@odata.type\": \"#microsoft.graph.itemAttachment\",\r\n  \"name\": \"Holiday event\", \r\n  \"item\": {\r\n    \"@odata.type\": \"microsoft.graph.event\",\r\n    \"subject\": \"Discuss gifts for children\",\r\n    \"body\": {\r\n      \"contentType\": \"HTML\",\r\n      \"content\": \"Let's look for funding!\"\r\n    },\r\n    \"start\": {\r\n      \"dateTime\": \"2016-12-02T18:00:00\",\r\n      \"timeZone\": \"Pacific Standard Time\"\r\n    },\r\n    \"end\": {\r\n      \"dateTime\": \"2016-12-02T19:00:00\",\r\n      \"timeZone\": \"Pacific Standard Time\"\r\n    }\r\n  }\r\n}\n"
   },
   "comment": "create_item_attachment_from_message"
 }

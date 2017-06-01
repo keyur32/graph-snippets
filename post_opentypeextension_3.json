@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"@odata.type\" : \"Microsoft.Graph.OpenTypeExtension\",\r\n  \"extensionName\" : \"Com.Contoso.Deal\",\r\n  \"companyName\" : \"Alpine Skis\",\r\n  \"dealValue\" : 1010100,\r\n  \"expirationDate\" : \"2015-07-03T13:04:00.000Z\"\r\n}\n"
   },
   "comment": "post_opentypeextension_3"
 }

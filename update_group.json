@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups/{id}",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"description\": \"description-value\",\r\n  \"displayName\": \"displayName-value\",\r\n  \"groupTypes\": [\r\n    \"groupTypes-value\"\r\n  ],\r\n  \"mail\": \"mail-value\",\r\n  \"mailEnabled\": true,\r\n  \"mailNickname\": \"mailNickname-value\"\r\n}\n"
   },
   "comment": "update_group"
 }

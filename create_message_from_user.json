@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"receivedDateTime\": \"datetime-value\",\r\n  \"sentDateTime\": \"datetime-value\",\r\n  \"hasAttachments\": true,\r\n  \"subject\": \"subject-value\",\r\n  \"body\": {\r\n    \"contentType\": \"\",\r\n    \"content\": \"content-value\"\r\n  },\r\n  \"bodyPreview\": \"bodyPreview-value\"\r\n}\n"
   },
   "comment": "create_message_from_user"
 }

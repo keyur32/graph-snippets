@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"@odata.type\": \"#microsoft.graph.fileAttachment\",\r\n  \"name\": \"smile\",\r\n  \"contentBytes\": \"R0lGODdhEAYEAA7\"\r\n}\n"
   },
   "comment": "create_file_attachment_from_message"
 }

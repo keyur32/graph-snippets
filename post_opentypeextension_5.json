@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"Topic\": \"Does anyone have a second?\",\r\n  \"Threads\": [\r\n    {\r\n      \"Posts\": [\r\n        {\r\n          \"Body\": {\r\n            \"ContentType\": \"HTML\",\r\n            \"Content\": \"This is urgent!\"\r\n          },\r\n          \"Extensions\": [\r\n            {\r\n              \"@odata.type\": \"Microsoft.OutlookServices.OpenTypeExtension\",\r\n              \"extensionName\": \"Com.Contoso.Benefits\",\r\n              \"companyName\": \"Contoso\",\r\n              \"expirationDate\": \"2016-08-03T11:00:00.000Z\",\r\n              \"topPicks\": [\r\n                \"Employees only\",\r\n                \"Add spouse or guest\",\r\n                \"Add family\"\r\n              ]  \r\n            }  \r\n          ] \r\n        } \r\n      ]  \r\n    } \r\n  ]\r\n}\n"
   },
   "comment": "post_opentypeextension_5"
 }

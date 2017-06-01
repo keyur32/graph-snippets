@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/findMeetingTimes",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{ \r\n  \"attendees\": [ \r\n    { \r\n      \"type\": \"required\",  \r\n      \"emailAddress\": { \r\n        \"name\": \"Fanny Downs\",\r\n        \"address\": \"fannyd@a830edad905084922E16072013.onmicrosoft.com\" \r\n      } \r\n    },\r\n    { \r\n      \"type\": \"optional\",  \r\n      \"emailAddress\": { \r\n        \"name\": \"Dana Swope\",\r\n        \"address\": \"danas@a830edad905084922E16072013.onmicrosoft.com\" \r\n      } \r\n    } \r\n  ],  \r\n  \"locationConstraint\": { \r\n    \"isRequired\": \"false\",  \r\n    \"suggestLocation\": \"false\",  \r\n    \"locations\": [ \r\n      { \r\n        \"resolveAvailability\": \"false\",\r\n        \"displayName\": \"Conf room Hood\" \r\n      } \r\n    ] \r\n  },  \r\n  \"timeConstraint\": { \r\n    \"timeslots\": [ \r\n      { \r\n        \"start\": { \r\n          \"dateTime\": \"2016-10-20T07:00:00\",  \r\n          \"timeZone\": \"Pacific Standard Time\" \r\n        },  \r\n        \"end\": { \r\n          \"dateTime\": \"2016-10-20T17:00:00\",  \r\n          \"timeZone\": \"Pacific Standard Time\" \r\n        } \r\n      } \r\n    ] \r\n  },  \r\n  \"meetingDuration\": \"PT2H\",\r\n  \"returnSuggestionReasons\": \"true\",\r\n  \"minimumAttendeePercentage\": \"60\"\r\n}\n"
   },
   "comment": "user_findmeetingtimes"
 }

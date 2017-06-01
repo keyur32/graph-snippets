@@ -1,5 +1,11 @@
 {
   "method": "GET",
   "url": "https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/rows",
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    }
+  ],
   "comment": "get_rows"
 }

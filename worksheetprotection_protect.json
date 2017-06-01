@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/protection/protect",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"options\": {\r\n    \"allowFormatCells\": true,\r\n    \"allowFormatColumns\": true,\r\n    \"allowFormatRows\": true,\r\n    \"allowInsertColumns\": true,\r\n    \"allowInsertRows\": true,\r\n    \"allowInsertHyperlinks\": true,\r\n    \"allowDeleteColumns\": true,\r\n    \"allowDeleteRows\": true,\r\n    \"allowSort\": true,\r\n    \"allowAutoFilter\": true,\r\n    \"allowPivotTables\": true\r\n  }\r\n}\n"
   },
   "comment": "worksheetprotection_protect"
 }

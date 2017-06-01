@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"height\": 99,\r\n  \"width\": 99,\r\n  \"id\": \"id-value\"\r\n}\n"
   },
   "comment": "update_photo"
 }

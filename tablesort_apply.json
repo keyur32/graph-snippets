@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort/apply",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"fields\": [\r\n    {\r\n      \"key\": 99,\r\n      \"sortOn\": \"sortOn-value\",\r\n      \"ascending\": true,\r\n      \"color\": \"color-value\",\r\n      \"dataOption\": \"dataOption-value\",\r\n      \"icon\": {\r\n        \"set\": \"set-value\",\r\n        \"index\": 99\r\n      }\r\n    }\r\n  ],\r\n  \"matchCase\": true,\r\n  \"method\": \"method-value\"\r\n}\n"
   },
   "comment": "tablesort_apply"
 }

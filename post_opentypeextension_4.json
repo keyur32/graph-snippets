@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/microsoft.graph.reply",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"post\": {\r\n    \"body\": {\r\n      \"contentType\": \"html\",\r\n      \"content\": \"<html><body><div><div><div><div>When and where? </div></div></div></div></body></html>\"\r\n    },\r\n  \"extensions\": [\r\n    {\r\n      \"@odata.type\": \"Microsoft.OutlookServices.OpenTypeExtension\",\r\n      \"extensionName\": \"Com.Contoso.HR\",\r\n      \"companyName\": \"Contoso\",\r\n      \"expirationDate\": \"2015-07-03T13:04:00.000Z\",\r\n      \"topPicks\": [\r\n        \"Employees only\",\r\n        \"Add spouse or guest\",\r\n        \"Add family\"\r\n      ]\r\n    }\r\n  ]        \r\n  }\r\n}\n"
   },
   "comment": "post_opentypeextension_4"
 }

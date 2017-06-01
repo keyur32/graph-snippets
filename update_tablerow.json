@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"index\": 99,\r\n  \"values\": \"values-value\"\r\n}\n"
   },
   "comment": "update_tablerow"
 }

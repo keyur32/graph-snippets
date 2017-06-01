@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/api/v1.0/me/mailboxSettings",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n    \"@odata.context\": \"https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings\",\r\n    \"automaticRepliesSetting\": {\r\n        \"status\": \"Scheduled\",\r\n        \"scheduledStartDateTime\": {\r\n          \"dateTime\": \"2016-03-20T18:00:00.0000000\",\r\n          \"timeZone\": \"UTC\"\r\n        },\r\n        \"scheduledEndDateTime\": {\r\n          \"dateTime\": \"2016-03-28T18:00:00.0000000\",\r\n          \"timeZone\": \"UTC\"\r\n        }\r\n    }\r\n}\n"
   },
   "comment": "update_mailboxsettings"
 }

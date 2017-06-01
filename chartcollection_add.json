@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts/add",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"type\": \"ColumnStacked\",\r\n  \"sourceData\": \"A1:B1\",\r\n  \"seriesBy\": \"Auto\"\r\n}\n"
   },
   "comment": "chartcollection_add"
 }

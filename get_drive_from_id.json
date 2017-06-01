@@ -1,5 +1,11 @@
 {
   "method": "GET",
   "url": "https://graph.microsoft.com/v1.0/drives/{drive-id}",
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    }
+  ],
   "comment": "get_drive_from_id"
 }

@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"@odata.type\":\"#Microsoft.OutlookServices.ConversationThread\",\r\n  \"isLocked\": true\r\n}\n"
   },
   "comment": "update_conversationthread"
 }

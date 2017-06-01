@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/calendar/events",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"originalStartTimeZone\": \"originalStartTimeZone-value\",\r\n  \"originalEndTimeZone\": \"originalEndTimeZone-value\",\r\n  \"responseStatus\": {\r\n    \"response\": \"\",\r\n    \"time\": \"datetime-value\"\r\n  },\r\n  \"reminderMinutesBeforeStart\": 99,\r\n  \"isReminderOn\": true\r\n}\n"
   },
   "comment": "create_event_from_calendar"
 }

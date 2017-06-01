@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/filter/apply",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"criteria\": {\r\n    \"criterion1\": \"criterion1-value\",\r\n    \"criterion2\": \"criterion2-value\",\r\n    \"color\": \"color-value\",\r\n    \"operator\": {\r\n    },\r\n    \"icon\": {\r\n      \"set\": \"set-value\",\r\n      \"index\": 99\r\n    },\r\n    \"dynamicCriteria\": \"dynamicCriteria-value\",\r\n    \"values\": {\r\n    },\r\n    \"filterOn\": \"filterOn-value\"\r\n  }\r\n}\n"
   },
   "comment": "filter_apply"
 }

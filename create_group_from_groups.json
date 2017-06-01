@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"description\": \"Self help community for library\",\r\n  \"displayName\": \"Library Assist\",\r\n  \"groupTypes\": [\r\n    \"Unified\"\r\n  ],\r\n  \"mailEnabled\": true,\r\n  \"mailNickname\": \"library\",\r\n  \"securityEnabled\": false\r\n}\n"
   },
   "comment": "create_group_from_groups"
 }

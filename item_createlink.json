@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createLink",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"type\": \"view\",\r\n  \"scope\": \"anonymous\"\r\n}\n"
   },
   "comment": "item_createlink"
 }

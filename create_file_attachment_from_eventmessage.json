@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages/{id}/attachments",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"@odata.type\": \"#Microsoft.OutlookServices.FileAttachment\",\r\n  \"name\": \"name-value\",\r\n  \"contentType\": \"contentType-value\",\r\n  \"isInline\": false,\r\n  \"contentLocation\": \"contentLocation-value\",\r\n  \"contentBytes\": \"contentBytes-value\"\r\n}\n"
   },
   "comment": "create_file_attachment_from_eventmessage"
 }

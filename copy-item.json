@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/copy",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"parentReference\": {\r\n    \"path\": \"/drive/root:/Documents\"\r\n  },\r\n  \"name\": \"contoso plan.docx\"\r\n}\n"
   },
   "comment": "copy-item"
 }

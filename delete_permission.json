@@ -3,6 +3,10 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/root/items/{item-id}/permissions/{perm-id}",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }

@@ -3,12 +3,16 @@
   "url": "/me/drive/items/{item-id}",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n\t\"name\": \"new-file-name.docx\"\r\n}\n"
   },
   "comment": "update_item"
 }

@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages/{id}",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"subject\": \"subject-value\",\r\n  \"body\": {\r\n    \"contentType\": \"\",\r\n    \"content\": \"content-value\"\r\n  },\r\n  \"inferenceClassification\": \"other\"\r\n}\n"
   },
   "comment": "update_message"
 }

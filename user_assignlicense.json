@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/assignLicense",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"addLicenses\": [\r\n    {\r\n      \"disabledPlans\": [ \"11b0131d-43c8-4bbb-b2c8-e80f9a50834a\" ],\r\n      \"skuId\": \"skuId-value\"\r\n    }\r\n  ],\r\n  \"removeLicenses\": [ \"bea13e0c-3828-4daa-a392-28af7ff61a0f\" ]\r\n}\n"
   },
   "comment": "user_assignlicense"
 }

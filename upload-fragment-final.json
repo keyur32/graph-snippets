@@ -3,6 +3,10 @@
   "url": "https://tenant-my.sharepoint.com/alkjl1kjklna",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }

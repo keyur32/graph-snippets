@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/drive/items/{item-id}/invite",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"recipients\": [\r\n    {\r\n      \"email\": \"ryan@contoso.org\"\r\n    }\r\n  ],\r\n  \"message\": \"Here's the file that we're collaborating on.\",\r\n  \"requireSignIn\": true,\r\n  \"sendInvitation\": true,\r\n  \"roles\": [ \"write\" ]\r\n}\n"
   },
   "comment": "item_invite"
 }

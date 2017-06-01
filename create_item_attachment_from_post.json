@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"@odata.type\": \"#microsoft.graph.itemAttachment\",\r\n  \"name\": \"name-value\",\r\n  \"item\": { }\r\n}\n"
   },
   "comment": "create_item_attachment_from_post"
 }

@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/devices",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"accountEnabled\":false,\r\n  \"alternativeSecurityIds\":\r\n  [\r\n    {\r\n      \"type\":2,\r\n      \"key\":\"Y3YxN2E1MWFlYw==\"\r\n    }\r\n  ],\r\n  \"deviceId\":\"4c299165-6e8f-4b45-a5ba-c5d250a707ff\",\r\n  \"displayName\":\"Test device\",\r\n  \"operatingSystem\":\"linux\",\r\n  \"operatingSystemVersion\":\"1\"\r\n}\n"
   },
   "comment": "create_device_from_devices"
 }

@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/sendMail",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"fannyd@contoso.onmicrosoft.com\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"danas@contoso.onmicrosoft.com\"\r\n        }\r\n      }\r\n    ],\r\n  },\r\n  \"saveToSentItems\": \"false\"\r\n}\n"
   },
   "comment": "user_sendmail"
 }

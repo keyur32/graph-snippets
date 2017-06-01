@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate')",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n   \"@odata.type\": \"Microsoft.OutlookServices.OpenTypeExtension\",\r\n   \"extensionName\": \"Com.Contoso.Estimate\",\r\n   \"companyName\": \"Contoso\",\r\n   \"expirationDate\": \"2016-07-30T11:00:00.000Z\",\r\n   \"DealValue\": 1010100,\r\n   \"topPicks\": [\r\n       \"Employees only\",\r\n       \"Add spouse or guest\",\r\n       \"Add family\"\r\n    ]\r\n}\n"
   },
   "comment": "update_opentypeextension"
 }

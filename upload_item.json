@@ -3,6 +3,10 @@
   "url": "/me/drive/root:/{item-path}:/content",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }

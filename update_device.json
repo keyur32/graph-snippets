@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/devices/{id}",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"accountEnabled\": true\r\n}\n"
   },
   "comment": "update_device"
 }

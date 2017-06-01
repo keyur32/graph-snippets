@@ -1,5 +1,11 @@
 {
   "method": "GET",
   "url": "https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting",
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    }
+  ],
   "comment": "get_mailboxsettings_2"
 }

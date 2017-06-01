@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{ \r\n  \"@odata.type\" : \"Microsoft.Graph.OpenTypeExtension\", \r\n  \"extensionName\" : \"Com.Contoso.Referral\", \r\n  \"companyName\" : \"Wingtip Toys\", \r\n  \"dealValue\" : 500050, \r\n  \"expirationDate\" : \"2015-12-03T10:00:00.000Z\" \r\n} \n"
   },
   "comment": "post_opentypeextension_2"
 }

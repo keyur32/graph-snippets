@@ -3,6 +3,10 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/DataBodyRange",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }

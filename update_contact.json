@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/contacts/{id}",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"homeAddress\": {\r\n    \"street\": \"123 Some street\",\r\n    \"city\": \"Seattle\",\r\n    \"state\": \"WA\",\r\n    \"postalCode\": \"98121\"\r\n  },\r\n  \"birthday\": \"1974-07-22\"\r\n}\n"
   },
   "comment": "update_contact"
 }

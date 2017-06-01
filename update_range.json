@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n\"values\" : [[\"Hello\", \"100\"],[\"1/1/2016\", null]],\r\n\"formula\" : [[null, null], [null, \"=B1*2\"]],\r\n\"numberFormat\" : [[null,null], [\"m-ddd\", null]]\r\n}\n"
   },
   "comment": "update_range"
 }

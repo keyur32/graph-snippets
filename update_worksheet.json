@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"id\": \"id-value\",\r\n  \"position\": 99,\r\n  \"name\": \"name-value\",\r\n  \"visibility\": \"visibility-value\"\r\n}\n"
   },
   "comment": "update_worksheet"
 }

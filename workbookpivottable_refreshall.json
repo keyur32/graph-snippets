@@ -3,6 +3,10 @@
   "url": "https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }

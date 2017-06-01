@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/reply",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"post\": {\r\n    \"body\": {\r\n      \"contentType\": \"\",\r\n      \"content\": \"content-value\"\r\n    }\r\n  }\r\n}\n"
   },
   "comment": "conversationthread_reply"
 }

@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders(<sideIndex>)",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"id\": \"id-value\",\r\n  \"color\": \"color-value\",\r\n  \"style\": \"style-value\",\r\n  \"sideIndex\": \"sideIndex-value\",\r\n  \"weight\": \"weight-value\"\r\n}\n"
   },
   "comment": "update_rangeborder"
 }

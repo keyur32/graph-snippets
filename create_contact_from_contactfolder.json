@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"parentFolderId\": \"parentFolderId-value\",\r\n  \"birthday\": \"datetime-value\",\r\n  \"fileAs\": \"fileAs-value\",\r\n  \"displayName\": \"displayName-value\",\r\n  \"givenName\": \"givenName-value\",\r\n  \"initials\": \"initials-value\"\r\n}\n"
   },
   "comment": "create_contact_from_contactfolder"
 }

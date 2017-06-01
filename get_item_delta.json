@@ -1,5 +1,11 @@
 {
   "method": "GET",
   "url": "https://graph.microsoft.com/v1.0/me/drive/root/delta(token='123123901209310923!23alksjd')",
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    }
+  ],
   "comment": "get_item_delta"
 }

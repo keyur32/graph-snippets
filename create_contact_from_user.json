@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/contacts",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"givenName\": \"Pavel\",\r\n  \"surname\": \"Bansky\",\r\n  \"emailAddresses\": [\r\n    {\r\n      \"address\": \"pavelb@fabrikam.onmicrosoft.com\",\r\n      \"name\": \"Pavel Bansky\"\r\n    }\r\n  ],\r\n  \"businessPhones\": [\r\n    \"+1 732 555 0102\"\r\n  ]\r\n}\n"
   },
   "comment": "create_contact_from_user"
 }

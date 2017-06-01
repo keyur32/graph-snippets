@@ -1,5 +1,11 @@
 {
   "method": "GET",
   "url": "https://b0mpua-by3301.files.1drv.com/y23vmag",
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    }
+  ],
   "comment": "driveitem-get-partial-content"
 }

@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"classifyAs\": \"focused\",\r\n  \"senderEmailAddress\": {\r\n    \"name\": \"Fanny Downs\",\r\n    \"address\": \"fannyd@adatum.onmicrosoft.com\"\r\n  }\r\n}\n"
   },
   "comment": "create_inferenceclassificationoverride_from_inferenceclassification"
 }

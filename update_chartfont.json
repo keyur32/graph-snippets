@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/format/font",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"bold\": true,\r\n  \"color\": \"color-value\",\r\n  \"italic\": true,\r\n  \"name\": \"name-value\",\r\n  \"size\": 99,\r\n  \"underline\": \"underline-value\"\r\n}\n"
   },
   "comment": "update_chartfont"
 }

@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"accountEnabled\": true,\r\n  \"assignedLicenses\": [\r\n    {\r\n      \"disabledPlans\": [ \"bea13e0c-3828-4daa-a392-28af7ff61a0f\" ],\r\n      \"skuId\": \"skuId-value\"\r\n    }\r\n  ],\r\n  \"assignedPlans\": [\r\n    {\r\n      \"assignedDateTime\": \"datetime-value\",\r\n      \"capabilityStatus\": \"capabilityStatus-value\",\r\n      \"service\": \"service-value\",\r\n      \"servicePlanId\": \"bea13e0c-3828-4daa-a392-28af7ff61a0f\"\r\n    }\r\n  ],\r\n  \"businessPhones\": [\r\n    \"businessPhones-value\"\r\n  ],\r\n  \"city\": \"city-value\",\r\n  \"companyName\": \"companyName-value\"\r\n}\n"
   },
   "comment": "update_user"
 }

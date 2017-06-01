@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/groups/{id}/threads",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"topic\": \"New Conversation Thread Topic\",\r\n  \"posts\": [{\r\n    \"body\": {\r\n      \"contentType\": \"html\",\r\n      \"content\": \"this is body content\"\r\n    },\r\n    \"newParticipants\": [{\r\n      \"emailAddress\": {\r\n        \"name\": \"Alex Darrow\",\r\n        \"address\": \"alexd@contoso.com\"\r\n      }\r\n    }]\r\n  }]\r\n}\n"
   },
   "comment": "create_conversationthread_from_group"
 }

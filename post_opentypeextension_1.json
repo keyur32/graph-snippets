@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"subject\": \"Annual review\",\r\n  \"body\": {\r\n    \"contentType\": \"HTML\",\r\n    \"content\": \"You should be proud!\"\r\n  },\r\n  \"toRecipients\": [\r\n    {\r\n      \"emailAddress\": {\r\n        \"address\": \"rufus@contoso.com\"\r\n      }\r\n    }\r\n  ],\r\n  \"extensions\": [\r\n    {\r\n      \"@odata.type\": \"Microsoft.Graph.OpenTypeExtension\",\r\n      \"extensionName\": \"Com.Contoso.Referral\",\r\n      \"companyName\": \"Wingtip Toys\",\r\n      \"expirationDate\": \"2015-12-30T11:00:00.000Z\",\r\n      \"dealValue\": 10000\r\n    }\r\n  ]\r\n}\n"
   },
   "comment": "post_opentypeextension_1"
 }

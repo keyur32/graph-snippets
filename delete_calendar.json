@@ -3,6 +3,10 @@
   "url": "https://graph.microsoft.com/v1.0/me/calendar",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }

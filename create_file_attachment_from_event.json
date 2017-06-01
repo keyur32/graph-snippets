@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/messages/{id}/attachments",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"@odata.type\": \"#microsoft.graph.fileAttachment\",\r\n  \"name\": \"name-value\",\r\n  \"contentBytes\": \"contentBytes-value\"\r\n}\n"
   },
   "comment": "create_file_attachment_from_event"
 }

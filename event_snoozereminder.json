@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/events/{id}/snoozeReminder",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"newReminderTime\": {\r\n    \"dateTime\": \"dateTime-value\",\r\n    \"timeZone\": \"timeZone-value\"\r\n  }\r\n}\n"
   },
   "comment": "event_snoozereminder"
 }

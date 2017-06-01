@@ -3,12 +3,16 @@
   "url": "https://graph.microsoft.com/v1.0/me/checkMemberGroups",
   "headers": [
     {
+      "name": "Authorization",
+      "value": "ENTER_TOKEN"
+    },
+    {
       "name": "Content-type",
       "value": "application/json"
     }
   ],
   "postData": {
-    "text": "{ }"
+    "text": "\r\n{\r\n  \"groupIds\": [\r\n        \"fee2c45b-915a-4a64-b130-f4eb9e75525e\",\r\n        \"4fe90ae7-065a-478b-9400-e0a0e1cbd540\"\r\n  ]\r\n}\n"
   },
   "comment": "directoryobject_checkmembergroups"
 }
